@@ -1,0 +1,4 @@
+goto_pose_server:
+  ros__parameters:
+    max_linear_speed: 2.0    # turtlesim units/s
+    max_angular_speed: 3.0   # rad/s

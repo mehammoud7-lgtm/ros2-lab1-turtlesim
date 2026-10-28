@@ -1,0 +1,9 @@
+# Goal (<=0 means use default 3.0)
+float32 side_length
+---
+# Result
+bool success
+int32 sides_completed
+---
+# Feedback
+int32 current_side
