@@ -6,6 +6,7 @@
 | Package | Contents |
 |---|---|
 | `turtle_interfaces` | `msg/TargetPose` (x,y,yaw), `srv/SetSpeedLimits`, `action/GoToPose` (goal = TargetPose), `action/DrawSquare` |
+| `turtle_bringup` | `system.launch.py`, `square_demo.launch.py`, `config/speed_limits.yaml` |
 | `turtle_control` | `goto_pose_server` (action `/go_to_pose` + service `/set_speed_limits` + parameters), `reset_service` (`/reset_turtle`), `square_server` (action `/draw_square`), launch files, YAML config |
 
 ## Build
@@ -20,9 +21,9 @@ source install/setup.bash
 
 ## Run
 ```bash
-ros2 launch turtle_control system.launch.py                       # everything
-ros2 launch turtle_control system.launch.py params_file:=/path/my.yaml
-ros2 launch turtle_control square_demo.launch.py                  # system + auto square
+ros2 launch turtle_bringup system.launch.py                       # everything
+ros2 launch turtle_bringup system.launch.py params_file:=/path/my.yaml
+ros2 launch turtle_bringup square_demo.launch.py                  # system + auto square
 ```
 
 ## Try every requirement

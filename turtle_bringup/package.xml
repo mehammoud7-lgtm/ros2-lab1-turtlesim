@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>turtle_bringup</name>
+  <version>0.1.0</version>
+  <description>Launch files and parameters for the turtlesim lab</description>
+  <maintainer email="team@example.com">Team</maintainer>
+  <license>Apache-2.0</license>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>turtlesim</exec_depend>
+  <exec_depend>turtle_control</exec_depend>
+  <export><build_type>ament_python</build_type></export>
+</package>

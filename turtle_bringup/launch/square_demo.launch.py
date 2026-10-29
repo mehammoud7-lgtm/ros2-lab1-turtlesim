@@ -7,7 +7,7 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 
 def generate_launch_description():
-    share = get_package_share_directory('turtle_control')
+    share = get_package_share_directory('turtle_bringup')
     system = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(os.path.join(share, 'launch', 'system.launch.py')))
     trigger = TimerAction(period=3.0, actions=[ExecuteProcess(

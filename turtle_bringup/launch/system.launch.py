@@ -8,7 +8,7 @@ from launch_ros.actions import Node
 
 
 def generate_launch_description():
-    default_params = os.path.join(get_package_share_directory('turtle_control'),
+    default_params = os.path.join(get_package_share_directory('turtle_bringup'),
                                   'config', 'speed_limits.yaml')
     return LaunchDescription([
         DeclareLaunchArgument('params_file', default_value=default_params,
